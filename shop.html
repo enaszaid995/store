@@ -74,48 +74,42 @@
   <!-- Container wrapper -->
 </nav>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light navtwo">
-  <!-- Container wrapper -->
-  <div class="container-fluid">
-        
-    <!-- Collapsible wrapper -->
-    <div
-      class="collapse navbar-collapse justify-content-center"
-      id="navbarCenteredExample"
-    >
-    <!--links-->
-      <ul class="navbar-nav mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="index.html">HOME</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="about.html">ABOUT</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="shop.html">SHOP</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="#">CATALOGUE</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="#">NEWARRIVALS</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="#">CONTACT</a>
-        </li>
-        
-      </ul>
-      <!-- end links -->
+<div class="listlinks">
+  
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a  class="nav-link active" aria-current="page" href="index.html">HOME</a>
+            </li>
+    
+            <li class="list-inline-item">
+              <a class="nav-link " aria-current="page" href="about.html">ABOUT</a>
+            </li>
+    
+            <li class="list-inline-item">
+              <a class="nav-link " aria-current="page" href="shop.html">SHOP</a>
+            </li>
+    
+            <li class="list-inline-item">
+              <a class="nav-link " aria-current="page" href="#">CATALOGUE</a>
+            </li>
+    
+            <li class="list-inline-item">
+              <a class="nav-link " aria-current="page" href="#">NEWARRIVALS</a>
+            </li>
+    
+            <li class="list-inline-item">
+              <a class="nav-link " aria-current="page" href="contactform.html">CONTACT</a>
+            </li>
+            
+          </ul>
+      </div>
     </div>
-    <!-- Collapsible wrapper -->
   </div>
-  <!-- Container wrapper -->
-</nav>
+
+</div>
 <!-- Navbar -->
 
 <!-- Path -->
@@ -159,18 +153,19 @@
                         <h6>FILTER BY PRICE</h6>
                         <div class="progress">
                             <div class="multi-range-slider">
-                              <input type="range" id="input-left" min="0" max="1000" value="75">
-                              <input type="range" id="input-right" min="0" max="1000" value="100">
+                              <input type="range" min="0" max="1000" value="300" class="r" id="myRange">
+
                               <div class="slider">
+                                
                                 <div class="track"></div>
                                 <div class="range"></div>
-                                <div class="thumb left"></div>
-                                <div class="thumb right"></div>
+                                <!-- <div class="thumb left"></div>
+                                <div class="thumb right"></div> -->
                               </div>
                             </div>
                         </div>
-                        
-                        <p class="text-muted">$75 - $300</p>
+                        <br>
+                        <p class="text-muted">75$ - <span id="demo" class="text-muted"></span> $</p>
 
                         <div class="row">
                             <div class="col-12">
@@ -625,7 +620,17 @@
 </footer>
 <!-- End Footer-->
     <!-- End your project here-->
+    
     <!--Bootstrap-->
+    <script>
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      output.innerHTML = slider.value;
+
+      slider.oninput = function() {
+        output.innerHTML = this.value;
+      }
+    </script>
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -635,6 +640,9 @@
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js.map"></script>
     <script type="text/javascript"></script>
+
+   
   </body>
 </html>
