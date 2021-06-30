@@ -180,7 +180,7 @@ header .container .row .head2 a{
 }
 .collections .container .row .collection{
     position: relative;
-    
+   margin-bottom: 50px; 
 }
 .collections .container .row .collection .img-zoom{
     overflow: hidden;
@@ -197,7 +197,8 @@ header .container .row .head2 a{
 
 .collections .container .row .collection .description{
     position: absolute;
-    top: 0;
+    bottom: 0;
+    margin-bottom: 20px;
     margin-top: 380px;
     margin-left: 20px;
     z-index: 2;
@@ -1136,14 +1137,7 @@ main .row .head2 p{
     padding: 15px 0px;
 }
 @media(max-width: 1200px)and (min-width:991.98px){
-    .services .container .row i{
-        font-size: 30px;
-     }
-
-     .collections .container .row .collection .description{
-        
-        margin-top: 280px;
-    }
+    
 
     footer .container .footbody .navigation .row .list .subscribe form{
         padding: 0;
@@ -1168,18 +1162,6 @@ main .row .head2 p{
         font-size: 30px;
     }
 
-    .services .container .row i{
-        color: #7971ea;
-        font-size: 20px;
-    }
-    .collections .container .row .collection .description{
-        
-        margin-top: 750px;
-    }
-    .collections .container .row .collection{
-        
-        margin-bottom:50px;
-    }
     .sales .container .sale1{
         display: none;
   }
@@ -1187,12 +1169,9 @@ main .row .head2 p{
   .sales .container .sale2{
         margin: auto;
 }
-main .container .head1{
-    display: none;
-}
 
 }
-@media(max-width: 767.98px) { 
+@media(max-width: 767.98px) and (min-width:580){ 
     header .container .row .head1{
         display: none;
         
@@ -1202,26 +1181,14 @@ main .container .head1{
         font-size: 14px;
         padding: 5px;
     }
-  
-    .collections .container .row .collection{
-        
-        margin-bottom:50px;
-    }
-    .collections .container .row .collection .description{
-        
-        margin-top: 550px;
-    }
+ 
     .sales .container .sale1{
         display: none;
     }
-    main .row .head1{
-        display: none;
-    }
+    
     .single-product .head1{
-        display: none;
+        margin:auto;
     }
-    .services .container .row i{
-       font-size: 35px;
-    }
-
+   
 }
+
