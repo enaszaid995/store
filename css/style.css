@@ -468,6 +468,7 @@ footer .container .footbody .navigation .row .list2 ul{
    margin: 0;
    /* background-color: rgb(243, 243, 243); */
    border: 1px solid rgb(182, 180, 180);
+   padding-right: 60px;
 }
 
   footer .container .footbody .navigation .row .list .subscribe form input[type=email] {
@@ -486,7 +487,6 @@ footer .container .footbody .navigation .row .list .subscribe form input[type=su
     border: none;
     border-radius: 4px;
     cursor: pointer;
-   
   }
   
   footer .container .footbody .navigation .row .list .subscribe form input[type=submit]:hover {
@@ -622,14 +622,7 @@ main .row .head2 p{
     align-items: center;
     
     }
-/* .shop .shop-sec .progress .slider{
-        position: absolute;
-        z-index: 2;
-        height: 10px;
-        background-color: #fbfbfb;
-        /* margin-top: 10px 15px; */
-        /* top:10px
-    } */
+
 
     .r {
         position: absolute;
@@ -670,18 +663,7 @@ main .row .head2 p{
         
       }
     
-/* .shop .shop-sec .slider >.track{
-    position: absolute;
-    opacity: 0.3;
-    z-index: 3;
-    top: 5px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 5px;
-    border: 1px solid #7971ea;
-    
-} */
+
 
 .shop .shop-sec .slider >.range{
         position: absolute;
@@ -934,13 +916,13 @@ main .row .head2 p{
 .cart .cart-update .buttons-cart .btn-secondary{
     background-color: #7971ea;
     border: none;
-    padding: 10px 80px;
+    padding: 10px 50px;
     margin-right: 20px;
 }
 .cart .cart-update .buttons-cart .btn-outline-secondary{
     color: #7971ea;
     border-color:#7971ea ;
-    padding: 10px 70px;
+    padding: 10px 40px;
     margin-right: 10px;
 }
 .cart .cart-update .buttons-cart .btn-outline-secondary:hover{
@@ -959,14 +941,14 @@ main .row .head2 p{
     outline: none;
    
     border: 1px solid rgb(231, 227, 227);
-    width: 60%;
+    width: 56%;
     margin-right: 20px;
 }
 .cart .cart-update .apply-code button{
     background-color: #7971ea;
     border: none;
     border-radius: 3px;
-    padding: 10px 20px;
+    padding: 14px 20px;
     margin-right: 10px;
     color: white;
     line-height: 1.2;
@@ -995,6 +977,7 @@ main .row .head2 p{
 .cart .cart-update .proceed-button button{
     margin-left: 30px;
     padding:20px 25px;
+   
 }
 .cart .cart-update .proceed-button a{
     text-decoration: none;
@@ -1152,15 +1135,81 @@ main .row .head2 p{
     border: 1px solid rgb(231, 227, 227);
     padding: 15px 0px;
 }
+@media(max-width: 1200px)and (min-width:991.98px){
+    .services .container .row i{
+        font-size: 30px;
+     }
 
+     .collections .container .row .collection .description{
+        
+        margin-top: 280px;
+    }
+
+    footer .container .footbody .navigation .row .list .subscribe form{
+        padding: 0;
+        margin: 0;
+       padding-right: 20px;
+     }
+     
+       footer .container .footbody .navigation .row .list .subscribe form input[type=email] {
+     
+         padding: 8px 15px;
+         font-size: 14px;
+       }
+     footer .container .footbody .navigation .row .list .subscribe form input[type=submit] {
+        
+         padding: 8px 10px;
+         font-size: 14px;
+       }
+}
+
+@media (max-width: 991.98px) and (min-width:767.98px){ 
+    header .container .row .head2 h1 {
+        font-size: 30px;
+    }
+
+    .services .container .row i{
+        color: #7971ea;
+        font-size: 20px;
+    }
+    .collections .container .row .collection .description{
+        
+        margin-top: 750px;
+    }
+    .collections .container .row .collection{
+        
+        margin-bottom:50px;
+    }
+    .sales .container .sale1{
+        display: none;
+  }
+
+  .sales .container .sale2{
+        margin: auto;
+}
+main .container .head1{
+    display: none;
+}
+
+}
 @media(max-width: 767.98px) { 
     header .container .row .head1{
         display: none;
         
     }
+
+    .listlinks .list-inline .list-inline-item .nav-link{
+        font-size: 14px;
+        padding: 5px;
+    }
+  
+    .collections .container .row .collection{
+        
+        margin-bottom:50px;
+    }
     .collections .container .row .collection .description{
         
-        margin-top: 250px;
+        margin-top: 550px;
     }
     .sales .container .sale1{
         display: none;
@@ -1172,13 +1221,7 @@ main .row .head2 p{
         display: none;
     }
     .services .container .row i{
-       display: none;
+       font-size: 35px;
     }
 
- }
- @media (max-width: 991.98px) and (min-width:767.98px){ 
-    .services .container .row i{
-        color: #7971ea;
-        font-size: 20px;
-    }
-  }
+}
